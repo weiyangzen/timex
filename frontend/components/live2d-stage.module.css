@@ -1,0 +1,85 @@
+.stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 72px;
+  min-height: 104px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 50% 92%, rgba(0, 0, 0, 0.11), transparent 40%),
+    linear-gradient(180deg, var(--surface) 0%, var(--surface-soft) 100%);
+  isolation: isolate;
+}
+
+.canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+.ready .canvas {
+  opacity: 1;
+}
+
+.fallback {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+}
+
+.ready .fallback {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.interactive {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.interactive:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.loading::before {
+  position: absolute;
+  right: 8%;
+  top: 8%;
+  z-index: 3;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--surface);
+  border-radius: 999px;
+  background: var(--warning);
+  content: "";
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--warning) 28%, transparent);
+  animation: live2dStageLoading 1.1s ease-in-out infinite;
+}
+
+@keyframes live2dStageLoading {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--warning) 30%, transparent);
+  }
+
+  55% {
+    box-shadow: 0 0 0 8px color-mix(in srgb, var(--warning) 0%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .canvas {
+    transition: none;
+  }
+
+  .loading::before {
+    animation: none;
+  }
+}

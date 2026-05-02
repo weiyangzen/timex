@@ -1,0 +1,1536 @@
+{
+  "version": 1,
+  "character": "AYuan",
+  "motion": "blink",
+  "frameCount": 16,
+  "loop": false,
+  "tensor": "blink.motion-tensor.png",
+  "pin": "blink.pin-tensor.png",
+  "preview": "blink.preview-16grid.png",
+  "policy": {
+    "noDuplicateOverlay": true,
+    "noGhosting": true,
+    "keepFeetAttached": true,
+    "keepNeckAttached": true,
+    "singleSourcePartsOnly": true,
+    "primaryRoles": [
+      "facial",
+      "head",
+      "hair"
+    ],
+    "lockedRoles": [
+      "neck",
+      "torso",
+      "hip",
+      "leg",
+      "foot"
+    ],
+    "maxFrameOffsetPx": 14
+  },
+  "frames": [
+    {
+      "index": 0,
+      "t": 0,
+      "phase": 0,
+      "root": {
+        "tx": 0,
+        "ty": 0,
+        "rotate": 0,
+        "sx": 1,
+        "sy": 1
+      },
+      "groups": {
+        "hair": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.28
+        },
+        "head": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.45
+        },
+        "facial": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.74
+        },
+        "neck": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.96
+        },
+        "torso": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        },
+        "hand": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.72
+        },
+        "hip": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.9
+        },
+        "leg": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.86
+        },
+        "foot": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.94
+        },
+        "prop": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        }
+      }
+    },
+    {
+      "index": 1,
+      "t": 0.0625,
+      "phase": 0.3927,
+      "root": {
+        "tx": 0.4592,
+        "ty": 0,
+        "rotate": 0.0765,
+        "sx": 1,
+        "sy": 1
+      },
+      "groups": {
+        "hair": {
+          "tx": 0.9184,
+          "ty": 0,
+          "rotate": 0.3444,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.28
+        },
+        "head": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0.3061,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.45
+        },
+        "facial": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.74
+        },
+        "neck": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.96
+        },
+        "torso": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        },
+        "hand": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.72
+        },
+        "hip": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.9
+        },
+        "leg": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.86
+        },
+        "foot": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.94
+        },
+        "prop": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        }
+      }
+    },
+    {
+      "index": 2,
+      "t": 0.125,
+      "phase": 0.7854,
+      "root": {
+        "tx": 0.8485,
+        "ty": 0,
+        "rotate": 0.1414,
+        "sx": 1,
+        "sy": 1
+      },
+      "groups": {
+        "hair": {
+          "tx": 1.6971,
+          "ty": 0,
+          "rotate": 0.6364,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.28
+        },
+        "head": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0.5657,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.45
+        },
+        "facial": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.74
+        },
+        "neck": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.96
+        },
+        "torso": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        },
+        "hand": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.72
+        },
+        "hip": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.9
+        },
+        "leg": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.86
+        },
+        "foot": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.94
+        },
+        "prop": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        }
+      }
+    },
+    {
+      "index": 3,
+      "t": 0.1875,
+      "phase": 1.1781,
+      "root": {
+        "tx": 1.1087,
+        "ty": 0.3449,
+        "rotate": 0.1848,
+        "sx": 1,
+        "sy": 0.999
+      },
+      "groups": {
+        "hair": {
+          "tx": 2.2173,
+          "ty": 0.2069,
+          "rotate": 0.8315,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.28
+        },
+        "head": {
+          "tx": 0,
+          "ty": 0.3104,
+          "rotate": 0.7391,
+          "sx": 1,
+          "sy": 0.9983,
+          "pin": 0.45
+        },
+        "facial": {
+          "tx": 0,
+          "ty": 0.1379,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 0.9793,
+          "pin": 0.74
+        },
+        "neck": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.96
+        },
+        "torso": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        },
+        "hand": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.72
+        },
+        "hip": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.9
+        },
+        "leg": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.86
+        },
+        "foot": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.94
+        },
+        "prop": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        }
+      }
+    },
+    {
+      "index": 4,
+      "t": 0.25,
+      "phase": 1.5708,
+      "root": {
+        "tx": 1.2,
+        "ty": 1.0454,
+        "rotate": 0.2,
+        "sx": 1,
+        "sy": 0.9969
+      },
+      "groups": {
+        "hair": {
+          "tx": 2.4,
+          "ty": 0.6272,
+          "rotate": 0.9,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.28
+        },
+        "head": {
+          "tx": 0,
+          "ty": 0.9409,
+          "rotate": 0.8,
+          "sx": 1,
+          "sy": 0.9948,
+          "pin": 0.45
+        },
+        "facial": {
+          "tx": 0,
+          "ty": 0.4182,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 0.9373,
+          "pin": 0.74
+        },
+        "neck": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.96
+        },
+        "torso": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        },
+        "hand": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.72
+        },
+        "hip": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.9
+        },
+        "leg": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.86
+        },
+        "foot": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.94
+        },
+        "prop": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        }
+      }
+    },
+    {
+      "index": 5,
+      "t": 0.3125,
+      "phase": 1.9635,
+      "root": {
+        "tx": 1.1087,
+        "ty": 2,
+        "rotate": 0.1848,
+        "sx": 1,
+        "sy": 0.994
+      },
+      "groups": {
+        "hair": {
+          "tx": 2.2173,
+          "ty": 1.2,
+          "rotate": 0.8315,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.28
+        },
+        "head": {
+          "tx": 0,
+          "ty": 1.8,
+          "rotate": 0.7391,
+          "sx": 1,
+          "sy": 0.99,
+          "pin": 0.45
+        },
+        "facial": {
+          "tx": 0,
+          "ty": 0.8,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 0.88,
+          "pin": 0.74
+        },
+        "neck": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.96
+        },
+        "torso": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        },
+        "hand": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.72
+        },
+        "hip": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.9
+        },
+        "leg": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.86
+        },
+        "foot": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.94
+        },
+        "prop": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        }
+      }
+    },
+    {
+      "index": 6,
+      "t": 0.375,
+      "phase": 2.3562,
+      "root": {
+        "tx": 0.8485,
+        "ty": 2,
+        "rotate": 0.1414,
+        "sx": 1,
+        "sy": 0.994
+      },
+      "groups": {
+        "hair": {
+          "tx": 1.6971,
+          "ty": 1.2,
+          "rotate": 0.6364,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.28
+        },
+        "head": {
+          "tx": 0,
+          "ty": 1.8,
+          "rotate": 0.5657,
+          "sx": 1,
+          "sy": 0.99,
+          "pin": 0.45
+        },
+        "facial": {
+          "tx": 0,
+          "ty": 0.8,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 0.88,
+          "pin": 0.74
+        },
+        "neck": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.96
+        },
+        "torso": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        },
+        "hand": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.72
+        },
+        "hip": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.9
+        },
+        "leg": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.86
+        },
+        "foot": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.94
+        },
+        "prop": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        }
+      }
+    },
+    {
+      "index": 7,
+      "t": 0.4375,
+      "phase": 2.7489,
+      "root": {
+        "tx": 0.4592,
+        "ty": 1.0454,
+        "rotate": 0.0765,
+        "sx": 1,
+        "sy": 0.9969
+      },
+      "groups": {
+        "hair": {
+          "tx": 0.9184,
+          "ty": 0.6272,
+          "rotate": 0.3444,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.28
+        },
+        "head": {
+          "tx": 0,
+          "ty": 0.9409,
+          "rotate": 0.3061,
+          "sx": 1,
+          "sy": 0.9948,
+          "pin": 0.45
+        },
+        "facial": {
+          "tx": 0,
+          "ty": 0.4182,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 0.9373,
+          "pin": 0.74
+        },
+        "neck": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.96
+        },
+        "torso": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        },
+        "hand": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.72
+        },
+        "hip": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.9
+        },
+        "leg": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.86
+        },
+        "foot": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.94
+        },
+        "prop": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        }
+      }
+    },
+    {
+      "index": 8,
+      "t": 0.5,
+      "phase": 3.1416,
+      "root": {
+        "tx": 0,
+        "ty": 0.3449,
+        "rotate": 0,
+        "sx": 1,
+        "sy": 0.999
+      },
+      "groups": {
+        "hair": {
+          "tx": 0,
+          "ty": 0.2069,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.28
+        },
+        "head": {
+          "tx": 0,
+          "ty": 0.3104,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 0.9983,
+          "pin": 0.45
+        },
+        "facial": {
+          "tx": 0,
+          "ty": 0.1379,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 0.9793,
+          "pin": 0.74
+        },
+        "neck": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.96
+        },
+        "torso": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        },
+        "hand": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.72
+        },
+        "hip": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.9
+        },
+        "leg": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.86
+        },
+        "foot": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.94
+        },
+        "prop": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        }
+      }
+    },
+    {
+      "index": 9,
+      "t": 0.5625,
+      "phase": 3.5343,
+      "root": {
+        "tx": -0.4592,
+        "ty": 0,
+        "rotate": -0.0765,
+        "sx": 1,
+        "sy": 1
+      },
+      "groups": {
+        "hair": {
+          "tx": -0.9184,
+          "ty": 0,
+          "rotate": -0.3444,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.28
+        },
+        "head": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": -0.3061,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.45
+        },
+        "facial": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.74
+        },
+        "neck": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.96
+        },
+        "torso": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        },
+        "hand": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.72
+        },
+        "hip": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.9
+        },
+        "leg": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.86
+        },
+        "foot": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.94
+        },
+        "prop": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        }
+      }
+    },
+    {
+      "index": 10,
+      "t": 0.625,
+      "phase": 3.927,
+      "root": {
+        "tx": -0.8485,
+        "ty": 0,
+        "rotate": -0.1414,
+        "sx": 1,
+        "sy": 1
+      },
+      "groups": {
+        "hair": {
+          "tx": -1.6971,
+          "ty": 0,
+          "rotate": -0.6364,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.28
+        },
+        "head": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": -0.5657,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.45
+        },
+        "facial": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.74
+        },
+        "neck": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.96
+        },
+        "torso": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        },
+        "hand": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.72
+        },
+        "hip": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.9
+        },
+        "leg": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.86
+        },
+        "foot": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.94
+        },
+        "prop": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        }
+      }
+    },
+    {
+      "index": 11,
+      "t": 0.6875,
+      "phase": 4.3197,
+      "root": {
+        "tx": -1.1087,
+        "ty": 0,
+        "rotate": -0.1848,
+        "sx": 1,
+        "sy": 1
+      },
+      "groups": {
+        "hair": {
+          "tx": -2.2173,
+          "ty": 0,
+          "rotate": -0.8315,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.28
+        },
+        "head": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": -0.7391,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.45
+        },
+        "facial": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.74
+        },
+        "neck": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.96
+        },
+        "torso": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        },
+        "hand": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.72
+        },
+        "hip": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.9
+        },
+        "leg": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.86
+        },
+        "foot": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.94
+        },
+        "prop": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        }
+      }
+    },
+    {
+      "index": 12,
+      "t": 0.75,
+      "phase": 4.7124,
+      "root": {
+        "tx": -1.2,
+        "ty": 0,
+        "rotate": -0.2,
+        "sx": 1,
+        "sy": 1
+      },
+      "groups": {
+        "hair": {
+          "tx": -2.4,
+          "ty": 0,
+          "rotate": -0.9,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.28
+        },
+        "head": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": -0.8,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.45
+        },
+        "facial": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.74
+        },
+        "neck": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.96
+        },
+        "torso": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        },
+        "hand": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.72
+        },
+        "hip": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.9
+        },
+        "leg": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.86
+        },
+        "foot": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.94
+        },
+        "prop": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        }
+      }
+    },
+    {
+      "index": 13,
+      "t": 0.8125,
+      "phase": 5.1051,
+      "root": {
+        "tx": -1.1087,
+        "ty": 0,
+        "rotate": -0.1848,
+        "sx": 1,
+        "sy": 1
+      },
+      "groups": {
+        "hair": {
+          "tx": -2.2173,
+          "ty": 0,
+          "rotate": -0.8315,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.28
+        },
+        "head": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": -0.7391,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.45
+        },
+        "facial": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.74
+        },
+        "neck": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.96
+        },
+        "torso": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        },
+        "hand": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.72
+        },
+        "hip": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.9
+        },
+        "leg": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.86
+        },
+        "foot": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.94
+        },
+        "prop": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        }
+      }
+    },
+    {
+      "index": 14,
+      "t": 0.875,
+      "phase": 5.4978,
+      "root": {
+        "tx": -0.8485,
+        "ty": 0,
+        "rotate": -0.1414,
+        "sx": 1,
+        "sy": 1
+      },
+      "groups": {
+        "hair": {
+          "tx": -1.6971,
+          "ty": 0,
+          "rotate": -0.6364,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.28
+        },
+        "head": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": -0.5657,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.45
+        },
+        "facial": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.74
+        },
+        "neck": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.96
+        },
+        "torso": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        },
+        "hand": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.72
+        },
+        "hip": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.9
+        },
+        "leg": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.86
+        },
+        "foot": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.94
+        },
+        "prop": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        }
+      }
+    },
+    {
+      "index": 15,
+      "t": 0.9375,
+      "phase": 5.8905,
+      "root": {
+        "tx": -0.4592,
+        "ty": 0,
+        "rotate": -0.0765,
+        "sx": 1,
+        "sy": 1
+      },
+      "groups": {
+        "hair": {
+          "tx": -0.9184,
+          "ty": 0,
+          "rotate": -0.3444,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.28
+        },
+        "head": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": -0.3061,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.45
+        },
+        "facial": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.74
+        },
+        "neck": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.96
+        },
+        "torso": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        },
+        "hand": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.72
+        },
+        "hip": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.9
+        },
+        "leg": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.86
+        },
+        "foot": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.94
+        },
+        "prop": {
+          "tx": 0,
+          "ty": 0,
+          "rotate": 0,
+          "sx": 1,
+          "sy": 1,
+          "pin": 0.82
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "character": "AYuan",
+  "motion": "blink",
+  "source": "assets/live2d/source/AYuan.png",
+  "sheet": "blink.static-full-16grid.png",
+  "grid": {
+    "columns": 4,
+    "rows": 4,
+    "cellSize": 512
+  },
+  "frames": [
+    {
+      "index": 0,
+      "tx": 0,
+      "ty": 0,
+      "rotate": 0,
+      "scale": 1,
+      "blink": 0
+    },
+    {
+      "index": 1,
+      "tx": 0.6123,
+      "ty": 0.1561,
+      "rotate": 0.1339,
+      "scale": 1,
+      "blink": 0
+    },
+    {
+      "index": 2,
+      "tx": 1.1314,
+      "ty": 0.3061,
+      "rotate": 0.2475,
+      "scale": 1,
+      "blink": 0
+    },
+    {
+      "index": 3,
+      "tx": 1.4782,
+      "ty": 0.756,
+      "rotate": 0.3234,
+      "scale": 0.9992,
+      "blink": 0.0974
+    },
+    {
+      "index": 4,
+      "tx": 1.6,
+      "ty": 2.1537,
+      "rotate": 0.35,
+      "scale": 0.996,
+      "blink": 0.4962
+    },
+    {
+      "index": 5,
+      "tx": 1.4782,
+      "ty": 3.8652,
+      "rotate": 0.3234,
+      "scale": 0.992,
+      "blink": 1
+    },
+    {
+      "index": 6,
+      "tx": 1.1314,
+      "ty": 3.9391,
+      "rotate": 0.2475,
+      "scale": 0.992,
+      "blink": 1
+    },
+    {
+      "index": 7,
+      "tx": 0.6123,
+      "ty": 2.3726,
+      "rotate": 0.1339,
+      "scale": 0.996,
+      "blink": 0.4962
+    },
+    {
+      "index": 8,
+      "tx": 0,
+      "ty": 1.1116,
+      "rotate": 0,
+      "scale": 0.9992,
+      "blink": 0.0974
+    },
+    {
+      "index": 9,
+      "tx": -0.6123,
+      "ty": 0.7846,
+      "rotate": -0.1339,
+      "scale": 1,
+      "blink": 0
+    },
+    {
+      "index": 10,
+      "tx": -1.1314,
+      "ty": 1.0507,
+      "rotate": -0.2475,
+      "scale": 0.9992,
+      "blink": 0.0974
+    },
+    {
+      "index": 11,
+      "tx": -1.4782,
+      "ty": 2.2531,
+      "rotate": -0.3234,
+      "scale": 0.996,
+      "blink": 0.4962
+    },
+    {
+      "index": 12,
+      "tx": -1.6,
+      "ty": 3.7657,
+      "rotate": -0.35,
+      "scale": 0.992,
+      "blink": 1
+    },
+    {
+      "index": 13,
+      "tx": -1.4782,
+      "ty": 2.0324,
+      "rotate": -0.3234,
+      "scale": 0.996,
+      "blink": 0.4962
+    },
+    {
+      "index": 14,
+      "tx": -1.1314,
+      "ty": 0.6177,
+      "rotate": -0.2475,
+      "scale": 0.9992,
+      "blink": 0.0974
+    },
+    {
+      "index": 15,
+      "tx": -0.6123,
+      "ty": 0.1561,
+      "rotate": -0.1339,
+      "scale": 1,
+      "blink": 0
+    }
+  ],
+  "constraints": {
+    "fullBodyVisible": true,
+    "sourceIsStaticFullImage": true,
+    "noPartDuplication": true,
+    "noLayerSplitPreview": true,
+    "greenBackground": "#00ff00"
+  }
+}

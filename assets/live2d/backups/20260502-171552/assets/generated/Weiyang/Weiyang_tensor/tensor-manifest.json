@@ -1,0 +1,1100 @@
+{
+  "version": 1,
+  "character": "Weiyang",
+  "sourceSize": {
+    "width": 1024,
+    "height": 1024
+  },
+  "tensorSize": {
+    "width": 256,
+    "height": 256
+  },
+  "source": "assets/live2d/generated/see-through-nf4-r1024/Weiyang/Weiyang",
+  "output": "assets/live2d/generated/see-through-nf4-r1024/Weiyang/Weiyang_tensor",
+  "publicBaseUrl": "/live2d/generated/see-through-nf4-r1024/Weiyang/Weiyang_tensor",
+  "maps": {
+    "control": "Weiyang_tensor/control_map.png",
+    "alpha": "Weiyang_tensor/alpha_map.png",
+    "depth": "Weiyang_tensor/depth_map.png",
+    "pin": "Weiyang_tensor/pin_map.png"
+  },
+  "drawOrder": [
+    "back hair",
+    "tail",
+    "wings",
+    "objects",
+    "footwear",
+    "legwear",
+    "bottomwear",
+    "topwear",
+    "neck",
+    "neckwear",
+    "handwear",
+    "face",
+    "ears",
+    "earwear",
+    "nose",
+    "eyewhite",
+    "irides",
+    "eyelash",
+    "eyebrow",
+    "mouth",
+    "eyewear",
+    "headwear",
+    "front hair"
+  ],
+  "layers": {
+    "back hair": {
+      "role": "hair",
+      "sideHint": "center",
+      "source": "Weiyang/back hair.png",
+      "depth": "Weiyang/back hair_depth.png",
+      "bbox": [
+        437,
+        23,
+        589,
+        174
+      ],
+      "tensorBbox": [
+        109,
+        5,
+        147,
+        44
+      ],
+      "center": {
+        "x": 0.501,
+        "y": 0.0962,
+        "xPx": 513,
+        "yPx": 99
+      },
+      "coverage": 0.0157,
+      "meanDepth": 0.7658,
+      "motion": {
+        "maxOffsetNorm": 0.024,
+        "pinStrength": 0.22,
+        "seamBlend": 0.12
+      }
+    },
+    "tail": {
+      "role": "hair",
+      "sideHint": "left",
+      "source": "Weiyang/tail.png",
+      "depth": "Weiyang/tail_depth.png",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tensorBbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "center": {
+        "x": 0,
+        "y": 0,
+        "xPx": 0,
+        "yPx": 0
+      },
+      "coverage": 0,
+      "meanDepth": null,
+      "motion": {
+        "maxOffsetNorm": 0.024,
+        "pinStrength": 0.22,
+        "seamBlend": 0.12
+      }
+    },
+    "wings": {
+      "role": "prop",
+      "sideHint": "left",
+      "source": "Weiyang/wings.png",
+      "depth": "Weiyang/wings_depth.png",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tensorBbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "center": {
+        "x": 0,
+        "y": 0,
+        "xPx": 0,
+        "yPx": 0
+      },
+      "coverage": 0,
+      "meanDepth": null,
+      "motion": {
+        "maxOffsetNorm": 0.01,
+        "pinStrength": 0.82,
+        "seamBlend": 0.74
+      }
+    },
+    "objects": {
+      "role": "prop",
+      "sideHint": "left",
+      "source": "Weiyang/objects.png",
+      "depth": "Weiyang/objects_depth.png",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tensorBbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "center": {
+        "x": 0,
+        "y": 0,
+        "xPx": 0,
+        "yPx": 0
+      },
+      "coverage": 0,
+      "meanDepth": null,
+      "motion": {
+        "maxOffsetNorm": 0.01,
+        "pinStrength": 0.82,
+        "seamBlend": 0.74
+      }
+    },
+    "footwear": {
+      "role": "facial",
+      "sideHint": "left-biased",
+      "source": "Weiyang/footwear.png",
+      "depth": "Weiyang/footwear_depth.png",
+      "bbox": [
+        358,
+        814,
+        635,
+        1021
+      ],
+      "tensorBbox": [
+        89,
+        203,
+        159,
+        256
+      ],
+      "center": {
+        "x": 0.4849,
+        "y": 0.896,
+        "xPx": 497,
+        "yPx": 918
+      },
+      "coverage": 0.0204,
+      "meanDepth": 0.8011,
+      "motion": {
+        "maxOffsetNorm": 0.01,
+        "pinStrength": 0.7,
+        "seamBlend": 0.38
+      }
+    },
+    "legwear": {
+      "role": "facial",
+      "sideHint": "right-biased",
+      "source": "Weiyang/legwear.png",
+      "depth": "Weiyang/legwear_depth.png",
+      "bbox": [
+        128,
+        406,
+        896,
+        1022
+      ],
+      "tensorBbox": [
+        103,
+        101,
+        159,
+        250
+      ],
+      "center": {
+        "x": 0.5,
+        "y": 0.6973,
+        "xPx": 512,
+        "yPx": 714
+      },
+      "coverage": 0.0588,
+      "meanDepth": 0.7861,
+      "motion": {
+        "maxOffsetNorm": 0.01,
+        "pinStrength": 0.7,
+        "seamBlend": 0.38
+      }
+    },
+    "bottomwear": {
+      "role": "facial",
+      "sideHint": "left",
+      "source": "Weiyang/bottomwear.png",
+      "depth": "Weiyang/bottomwear_depth.png",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tensorBbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "center": {
+        "x": 0,
+        "y": 0,
+        "xPx": 0,
+        "yPx": 0
+      },
+      "coverage": 0,
+      "meanDepth": null,
+      "motion": {
+        "maxOffsetNorm": 0.01,
+        "pinStrength": 0.7,
+        "seamBlend": 0.38
+      }
+    },
+    "topwear": {
+      "role": "facial",
+      "sideHint": "center",
+      "source": "Weiyang/topwear.png",
+      "depth": "Weiyang/topwear_depth.png",
+      "bbox": [
+        298,
+        139,
+        695,
+        803
+      ],
+      "tensorBbox": [
+        74,
+        34,
+        174,
+        201
+      ],
+      "center": {
+        "x": 0.4849,
+        "y": 0.46,
+        "xPx": 497,
+        "yPx": 471
+      },
+      "coverage": 0.0849,
+      "meanDepth": 0.6749,
+      "motion": {
+        "maxOffsetNorm": 0.01,
+        "pinStrength": 0.7,
+        "seamBlend": 0.38
+      }
+    },
+    "neck": {
+      "role": "neck",
+      "sideHint": "center",
+      "source": "Weiyang/neck.png",
+      "depth": "Weiyang/neck_depth.png",
+      "bbox": [
+        499,
+        116,
+        558,
+        187
+      ],
+      "tensorBbox": [
+        124,
+        29,
+        139,
+        47
+      ],
+      "center": {
+        "x": 0.5161,
+        "y": 0.1479,
+        "xPx": 529,
+        "yPx": 152
+      },
+      "coverage": 0.0029,
+      "meanDepth": 0.6716,
+      "motion": {
+        "maxOffsetNorm": 0.006,
+        "pinStrength": 0.92,
+        "seamBlend": 0.86
+      }
+    },
+    "neckwear": {
+      "role": "facial",
+      "sideHint": "center",
+      "source": "Weiyang/neckwear.png",
+      "depth": "Weiyang/neckwear_depth.png",
+      "bbox": [
+        467,
+        164,
+        563,
+        326
+      ],
+      "tensorBbox": [
+        116,
+        41,
+        141,
+        82
+      ],
+      "center": {
+        "x": 0.5029,
+        "y": 0.2393,
+        "xPx": 515,
+        "yPx": 245
+      },
+      "coverage": 0.0029,
+      "meanDepth": 0.6559,
+      "motion": {
+        "maxOffsetNorm": 0.01,
+        "pinStrength": 0.7,
+        "seamBlend": 0.38
+      }
+    },
+    "handwear": {
+      "role": "facial",
+      "sideHint": "left-biased",
+      "source": "Weiyang/handwear.png",
+      "depth": "Weiyang/handwear_depth.png",
+      "bbox": [
+        250,
+        172,
+        762,
+        654
+      ],
+      "tensorBbox": [
+        62,
+        43,
+        191,
+        164
+      ],
+      "center": {
+        "x": 0.4941,
+        "y": 0.4033,
+        "xPx": 506,
+        "yPx": 413
+      },
+      "coverage": 0.0647,
+      "meanDepth": 0.7333,
+      "motion": {
+        "maxOffsetNorm": 0.01,
+        "pinStrength": 0.7,
+        "seamBlend": 0.38
+      }
+    },
+    "face": {
+      "role": "facial",
+      "sideHint": "center",
+      "source": "Weiyang/face.png",
+      "depth": "Weiyang/face_depth.png",
+      "bbox": [
+        441,
+        36,
+        560,
+        150
+      ],
+      "tensorBbox": [
+        110,
+        9,
+        140,
+        38
+      ],
+      "center": {
+        "x": 0.4888,
+        "y": 0.0908,
+        "xPx": 501,
+        "yPx": 93
+      },
+      "coverage": 0.0039,
+      "meanDepth": 0.4628,
+      "motion": {
+        "maxOffsetNorm": 0.01,
+        "pinStrength": 0.7,
+        "seamBlend": 0.38
+      }
+    },
+    "ears": {
+      "role": "facial",
+      "sideHint": "center",
+      "source": "Weiyang/ears.png",
+      "depth": "Weiyang/ears_depth.png",
+      "bbox": [
+        457,
+        96,
+        566,
+        148
+      ],
+      "tensorBbox": [
+        114,
+        24,
+        142,
+        37
+      ],
+      "center": {
+        "x": 0.4995,
+        "y": 0.1191,
+        "xPx": 512,
+        "yPx": 122
+      },
+      "coverage": 0.0009,
+      "meanDepth": 0.5162,
+      "motion": {
+        "maxOffsetNorm": 0.01,
+        "pinStrength": 0.7,
+        "seamBlend": 0.38
+      }
+    },
+    "earwear": {
+      "role": "facial",
+      "sideHint": "left",
+      "source": "Weiyang/earwear.png",
+      "depth": "Weiyang/earwear_depth.png",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tensorBbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "center": {
+        "x": 0,
+        "y": 0,
+        "xPx": 0,
+        "yPx": 0
+      },
+      "coverage": 0,
+      "meanDepth": null,
+      "motion": {
+        "maxOffsetNorm": 0.01,
+        "pinStrength": 0.7,
+        "seamBlend": 0.38
+      }
+    },
+    "nose": {
+      "role": "facial",
+      "sideHint": "left",
+      "source": "Weiyang/nose.png",
+      "depth": "Weiyang/nose_depth.png",
+      "bbox": [
+        493,
+        124,
+        500,
+        139
+      ],
+      "tensorBbox": [
+        123,
+        31,
+        125,
+        35
+      ],
+      "center": {
+        "x": 0.4849,
+        "y": 0.1284,
+        "xPx": 497,
+        "yPx": 132
+      },
+      "coverage": 0.0001,
+      "meanDepth": 0.6418,
+      "motion": {
+        "maxOffsetNorm": 0.01,
+        "pinStrength": 0.7,
+        "seamBlend": 0.38
+      }
+    },
+    "eyewhite": {
+      "role": "facial",
+      "sideHint": "center",
+      "source": "Weiyang/eyewhite.png",
+      "depth": "Weiyang/eyewhite_depth.png",
+      "bbox": [
+        464,
+        99,
+        537,
+        137
+      ],
+      "tensorBbox": [
+        116,
+        24,
+        135,
+        35
+      ],
+      "center": {
+        "x": 0.4888,
+        "y": 0.1152,
+        "xPx": 501,
+        "yPx": 118
+      },
+      "coverage": 0.0008,
+      "meanDepth": 0.3652,
+      "motion": {
+        "maxOffsetNorm": 0.01,
+        "pinStrength": 0.7,
+        "seamBlend": 0.38
+      }
+    },
+    "irides": {
+      "role": "facial",
+      "sideHint": "center",
+      "source": "Weiyang/irides.png",
+      "depth": "Weiyang/irides_depth.png",
+      "bbox": [
+        516,
+        100,
+        533,
+        117
+      ],
+      "tensorBbox": [
+        129,
+        25,
+        134,
+        30
+      ],
+      "center": {
+        "x": 0.5122,
+        "y": 0.106,
+        "xPx": 525,
+        "yPx": 109
+      },
+      "coverage": 0.0002,
+      "meanDepth": 0.25,
+      "motion": {
+        "maxOffsetNorm": 0.01,
+        "pinStrength": 0.7,
+        "seamBlend": 0.38
+      }
+    },
+    "eyelash": {
+      "role": "facial",
+      "sideHint": "center",
+      "source": "Weiyang/eyelash.png",
+      "depth": "Weiyang/eyelash_depth.png",
+      "bbox": [
+        462,
+        96,
+        542,
+        131
+      ],
+      "tensorBbox": [
+        115,
+        24,
+        136,
+        33
+      ],
+      "center": {
+        "x": 0.4902,
+        "y": 0.1108,
+        "xPx": 502,
+        "yPx": 114
+      },
+      "coverage": 0.0005,
+      "meanDepth": 0.3875,
+      "motion": {
+        "maxOffsetNorm": 0.01,
+        "pinStrength": 0.7,
+        "seamBlend": 0.38
+      }
+    },
+    "eyebrow": {
+      "role": "facial",
+      "sideHint": "center",
+      "source": "Weiyang/eyebrow.png",
+      "depth": "Weiyang/eyebrow_depth.png",
+      "bbox": [
+        460,
+        83,
+        525,
+        105
+      ],
+      "tensorBbox": [
+        115,
+        20,
+        131,
+        26
+      ],
+      "center": {
+        "x": 0.481,
+        "y": 0.0918,
+        "xPx": 493,
+        "yPx": 94
+      },
+      "coverage": 0.0002,
+      "meanDepth": 0.4664,
+      "motion": {
+        "maxOffsetNorm": 0.01,
+        "pinStrength": 0.7,
+        "seamBlend": 0.38
+      }
+    },
+    "mouth": {
+      "role": "facial",
+      "sideHint": "center",
+      "source": "Weiyang/mouth.png",
+      "depth": "Weiyang/mouth_depth.png",
+      "bbox": [
+        497,
+        137,
+        524,
+        152
+      ],
+      "tensorBbox": [
+        124,
+        34,
+        131,
+        38
+      ],
+      "center": {
+        "x": 0.4985,
+        "y": 0.1411,
+        "xPx": 511,
+        "yPx": 145
+      },
+      "coverage": 0.0002,
+      "meanDepth": 0.4151,
+      "motion": {
+        "maxOffsetNorm": 0.01,
+        "pinStrength": 0.7,
+        "seamBlend": 0.38
+      }
+    },
+    "eyewear": {
+      "role": "facial",
+      "sideHint": "left",
+      "source": "Weiyang/eyewear.png",
+      "depth": "Weiyang/eyewear_depth.png",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tensorBbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "center": {
+        "x": 0,
+        "y": 0,
+        "xPx": 0,
+        "yPx": 0
+      },
+      "coverage": 0,
+      "meanDepth": null,
+      "motion": {
+        "maxOffsetNorm": 0.01,
+        "pinStrength": 0.7,
+        "seamBlend": 0.38
+      }
+    },
+    "headwear": {
+      "role": "facial",
+      "sideHint": "left",
+      "source": "Weiyang/headwear.png",
+      "depth": "Weiyang/headwear_depth.png",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tensorBbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "center": {
+        "x": 0,
+        "y": 0,
+        "xPx": 0,
+        "yPx": 0
+      },
+      "coverage": 0,
+      "meanDepth": null,
+      "motion": {
+        "maxOffsetNorm": 0.01,
+        "pinStrength": 0.7,
+        "seamBlend": 0.38
+      }
+    },
+    "front hair": {
+      "role": "hair",
+      "sideHint": "center",
+      "source": "Weiyang/front hair.png",
+      "depth": "Weiyang/front hair_depth.png",
+      "bbox": [
+        423,
+        24,
+        561,
+        151
+      ],
+      "tensorBbox": [
+        106,
+        6,
+        140,
+        38
+      ],
+      "center": {
+        "x": 0.4805,
+        "y": 0.0854,
+        "xPx": 492,
+        "yPx": 88
+      },
+      "coverage": 0.0096,
+      "meanDepth": 0.1529,
+      "motion": {
+        "maxOffsetNorm": 0.024,
+        "pinStrength": 0.22,
+        "seamBlend": 0.12
+      }
+    }
+  },
+  "skeleton": {
+    "character": "Weiyang",
+    "coordinateSpace": "source-normalized",
+    "splitX": 0.5,
+    "joints": {
+      "head": {
+        "x": 0.5,
+        "y": 0.24,
+        "xPx": 512,
+        "yPx": 246
+      },
+      "neckTop": {
+        "x": 0.5166,
+        "y": 0.1133,
+        "xPx": 529,
+        "yPx": 116
+      },
+      "neckBase": {
+        "x": 0.5166,
+        "y": 0.1826,
+        "xPx": 529,
+        "yPx": 187
+      },
+      "chest": {
+        "x": 0.5,
+        "y": 0.52,
+        "xPx": 512,
+        "yPx": 532
+      },
+      "hip": {
+        "x": 0.5,
+        "y": 0.5152,
+        "xPx": 512,
+        "yPx": 528
+      },
+      "leftKnee": {
+        "x": 0.44,
+        "y": 0.7176,
+        "xPx": 451,
+        "yPx": 735
+      },
+      "rightKnee": {
+        "x": 0.55,
+        "y": 0.7176,
+        "xPx": 563,
+        "yPx": 735
+      },
+      "leftAnkle": {
+        "x": 0.44,
+        "y": 0.874,
+        "xPx": 451,
+        "yPx": 895
+      },
+      "rightAnkle": {
+        "x": 0.55,
+        "y": 0.874,
+        "xPx": 563,
+        "yPx": 895
+      },
+      "leftFoot": {
+        "x": 0.42,
+        "y": 0.9064,
+        "xPx": 430,
+        "yPx": 928
+      },
+      "rightFoot": {
+        "x": 0.56,
+        "y": 0.9064,
+        "xPx": 573,
+        "yPx": 928
+      }
+    },
+    "chains": {
+      "spine": [
+        "hip",
+        "chest",
+        "neckBase",
+        "neckTop",
+        "head"
+      ],
+      "leftLeg": [
+        "hip",
+        "leftKnee",
+        "leftAnkle",
+        "leftFoot"
+      ],
+      "rightLeg": [
+        "hip",
+        "rightKnee",
+        "rightAnkle",
+        "rightFoot"
+      ]
+    }
+  },
+  "constraints": {
+    "contacts": [
+      {
+        "id": "neck_topwear",
+        "type": "contactPin",
+        "layers": [
+          "neck",
+          "topwear"
+        ],
+        "center": {
+          "x": 0.5166,
+          "y": 0.1598,
+          "xPx": 529,
+          "yPx": 164
+        },
+        "bbox": [
+          0.4902,
+          0.1367,
+          0.5449,
+          0.1826
+        ],
+        "pixelCount": 1885,
+        "maxSeparationNorm": 0.004,
+        "strength": 0.94
+      },
+      {
+        "id": "topwear_legwear",
+        "type": "contactPin",
+        "layers": [
+          "topwear",
+          "legwear"
+        ],
+        "center": {
+          "x": 0.4814,
+          "y": 0.4532,
+          "xPx": 493,
+          "yPx": 464
+        },
+        "bbox": [
+          0.4023,
+          0.3965,
+          0.5742,
+          0.5615
+        ],
+        "pixelCount": 4277,
+        "maxSeparationNorm": 0.008,
+        "strength": 0.84
+      },
+      {
+        "id": "legwear_footwear",
+        "type": "contactPin",
+        "layers": [
+          "legwear",
+          "footwear"
+        ],
+        "center": {
+          "x": 0.5338,
+          "y": 0.8786,
+          "xPx": 547,
+          "yPx": 900
+        },
+        "bbox": [
+          0.4189,
+          0.7949,
+          0.6182,
+          0.9736
+        ],
+        "pixelCount": 10702,
+        "maxSeparationNorm": 0.006,
+        "strength": 0.9
+      },
+      {
+        "id": "handwear_topwear",
+        "type": "contactPin",
+        "layers": [
+          "handwear",
+          "topwear"
+        ],
+        "center": {
+          "x": 0.5098,
+          "y": 0.2943,
+          "xPx": 522,
+          "yPx": 301
+        },
+        "bbox": [
+          0.3848,
+          0.1895,
+          0.6162,
+          0.4463
+        ],
+        "pixelCount": 12817,
+        "maxSeparationNorm": 0.01,
+        "strength": 0.72
+      }
+    ],
+    "depthOrder": [
+      {
+        "layer": "back hair",
+        "order": 0,
+        "meanDepth": 0.7658364422761209
+      },
+      {
+        "layer": "tail",
+        "order": 1,
+        "meanDepth": null
+      },
+      {
+        "layer": "wings",
+        "order": 2,
+        "meanDepth": null
+      },
+      {
+        "layer": "objects",
+        "order": 3,
+        "meanDepth": null
+      },
+      {
+        "layer": "footwear",
+        "order": 4,
+        "meanDepth": 0.8010754433860742
+      },
+      {
+        "layer": "legwear",
+        "order": 5,
+        "meanDepth": 0.7860561621400136
+      },
+      {
+        "layer": "bottomwear",
+        "order": 6,
+        "meanDepth": null
+      },
+      {
+        "layer": "topwear",
+        "order": 7,
+        "meanDepth": 0.6749443765481034
+      },
+      {
+        "layer": "neck",
+        "order": 8,
+        "meanDepth": 0.671629712951926
+      },
+      {
+        "layer": "neckwear",
+        "order": 9,
+        "meanDepth": 0.6559349710326938
+      },
+      {
+        "layer": "handwear",
+        "order": 10,
+        "meanDepth": 0.7332784338076848
+      },
+      {
+        "layer": "face",
+        "order": 12,
+        "meanDepth": 0.46280334225472014
+      },
+      {
+        "layer": "ears",
+        "order": 13,
+        "meanDepth": 0.5161775106098562
+      },
+      {
+        "layer": "earwear",
+        "order": 14,
+        "meanDepth": null
+      },
+      {
+        "layer": "nose",
+        "order": 15,
+        "meanDepth": 0.6417859359179541
+      },
+      {
+        "layer": "eyewhite",
+        "order": 16,
+        "meanDepth": 0.3651914668517011
+      },
+      {
+        "layer": "irides",
+        "order": 17,
+        "meanDepth": 0.2500063472019697
+      },
+      {
+        "layer": "eyelash",
+        "order": 18,
+        "meanDepth": 0.3875167157477164
+      },
+      {
+        "layer": "eyebrow",
+        "order": 19,
+        "meanDepth": 0.4664285230963545
+      },
+      {
+        "layer": "mouth",
+        "order": 20,
+        "meanDepth": 0.4151438723217733
+      },
+      {
+        "layer": "eyewear",
+        "order": 21,
+        "meanDepth": null
+      },
+      {
+        "layer": "headwear",
+        "order": 22,
+        "meanDepth": null
+      },
+      {
+        "layer": "front hair",
+        "order": 23,
+        "meanDepth": 0.15285503447489865
+      }
+    ],
+    "noGhosting": {
+      "policy": "single-source deformation only; never blend duplicate leg/foot overlay layers at runtime",
+      "alphaThreshold": 8
+    },
+    "noTearing": {
+      "maxGlobalOffsetNorm": 0.018,
+      "lockedRoles": [
+        "neck",
+        "torso",
+        "hip",
+        "foot"
+      ],
+      "contactPinIds": [
+        "neck_topwear",
+        "topwear_legwear",
+        "legwear_footwear",
+        "handwear_topwear"
+      ]
+    }
+  },
+  "splitLayers": null,
+  "runtimePolicy": {
+    "note": "Use this as a deformation-control tensor, not as a replacement for a Cubism rig.",
+    "preventGhosting": true,
+    "singleRenderSource": true,
+    "maxGlobalOffsetNorm": 0.018,
+    "enforceContactPins": true,
+    "preferPinnedSeams": [
+      "neck_topwear",
+      "topwear_legwear",
+      "legwear_footwear"
+    ]
+  }
+}

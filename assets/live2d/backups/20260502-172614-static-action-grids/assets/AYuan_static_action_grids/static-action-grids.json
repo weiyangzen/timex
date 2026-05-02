@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "character": "AYuan",
+  "source": "assets/live2d/source/AYuan.png",
+  "output": "assets/live2d/generated/see-through-nf4-r1024/AYuan/AYuan_static_action_grids",
+  "publicBaseUrl": "/live2d/generated/see-through-nf4-r1024/AYuan/AYuan_static_action_grids",
+  "note": "Full static-source 16-grid action sheets. These are visual action references, not tensor debug previews.",
+  "grid": {
+    "columns": 4,
+    "rows": 4,
+    "cellSize": 512
+  },
+  "frames": 16,
+  "motions": {
+    "blink": {
+      "sheet": "AYuan_static_action_grids/blink.static-full-16grid.png",
+      "manifest": "AYuan_static_action_grids/blink.static-full-16grid.json"
+    },
+    "thinking": {
+      "sheet": "AYuan_static_action_grids/thinking.static-full-16grid.png",
+      "manifest": "AYuan_static_action_grids/thinking.static-full-16grid.json"
+    },
+    "greeting": {
+      "sheet": "AYuan_static_action_grids/greeting.static-full-16grid.png",
+      "manifest": "AYuan_static_action_grids/greeting.static-full-16grid.json"
+    }
+  }
+}

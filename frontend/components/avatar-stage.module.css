@@ -1,0 +1,240 @@
+.stage {
+  --avatar-look-x: 0;
+  --avatar-look-y: 0;
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  min-width: 72px;
+  min-height: 104px;
+  place-items: end center;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 50% 92%, rgba(0, 0, 0, 0.11), transparent 40%),
+    linear-gradient(180deg, var(--surface) 0%, var(--surface-soft) 100%);
+  isolation: isolate;
+}
+
+.interactive {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.stage:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.stage::after {
+  position: absolute;
+  right: 12%;
+  bottom: 8%;
+  left: 12%;
+  z-index: 0;
+  height: 11%;
+  border-radius: 999px;
+  background: rgba(17, 20, 15, 0.15);
+  content: "";
+  filter: blur(8px);
+  transform: scaleX(0.88);
+}
+
+.figure {
+  position: absolute;
+  inset: 4% 0 0;
+  z-index: 1;
+  display: grid;
+  place-items: end center;
+  transform:
+    translate3d(calc(var(--avatar-look-x) * 3px), calc(var(--avatar-look-y) * 2px), 0)
+    scale(1);
+  transform-origin: 50% 96%;
+  animation: avatarStageBreath 4.8s ease-in-out infinite;
+  will-change: transform;
+}
+
+.portrait {
+  width: 116%;
+  height: 108%;
+  object-fit: contain;
+  object-position: center bottom;
+  filter: drop-shadow(0 16px 24px rgba(17, 20, 15, 0.2));
+}
+
+.eyes {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  z-index: 2;
+  display: flex;
+  gap: clamp(5px, 7%, 13px);
+  transform:
+    translateX(calc(-50% + var(--avatar-look-x) * 2px))
+    translateY(calc(var(--avatar-look-y) * 2px));
+  pointer-events: none;
+}
+
+.eyes i {
+  display: block;
+  width: clamp(4px, 6%, 9px);
+  height: clamp(4px, 6%, 9px);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--text) 88%, transparent);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16);
+  animation: avatarStageBlink 5.2s infinite;
+}
+
+.statusDot {
+  position: absolute;
+  right: 8%;
+  top: 8%;
+  z-index: 3;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--surface);
+  border-radius: 999px;
+  background: var(--success);
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--success) 28%, transparent);
+}
+
+.thinking .statusDot {
+  background: var(--warning);
+  animation: avatarStageThinking 1.1s ease-in-out infinite;
+}
+
+.speaking .statusDot,
+.focus .statusDot,
+.greeting .statusDot,
+.blink .statusDot {
+  background: var(--accent);
+}
+
+.speaking .figure,
+.focus .figure,
+.greeting .figure {
+  animation-duration: 3.2s;
+}
+
+.blink .eyes i {
+  animation: avatarStageQuickBlink 1.25s ease-in-out infinite;
+}
+
+.thinking .figure {
+  animation-name: avatarStageThinkBreath;
+  animation-duration: 2.2s;
+}
+
+.pulse {
+  position: absolute;
+  inset: 9%;
+  z-index: 0;
+  border: 1px solid color-mix(in srgb, var(--accent) 44%, transparent);
+  border-radius: 8px;
+  opacity: 0;
+  transform: scale(0.86);
+  pointer-events: none;
+}
+
+.focus .pulse,
+.speaking .pulse,
+.greeting .pulse {
+  animation: avatarStagePulse 1.8s ease-out infinite;
+}
+
+.compact .eyes {
+  top: 26%;
+}
+
+.full .portrait {
+  width: 122%;
+}
+
+@keyframes avatarStageBreath {
+  0%,
+  100% {
+    transform:
+      translate3d(calc(var(--avatar-look-x) * 3px), calc(var(--avatar-look-y) * 2px), 0)
+      scale(1);
+  }
+
+  48% {
+    transform:
+      translate3d(calc(var(--avatar-look-x) * 3px), calc(var(--avatar-look-y) * 2px - 2px), 0)
+      scale(1.018);
+  }
+}
+
+@keyframes avatarStageThinkBreath {
+  0%,
+  100% {
+    transform:
+      translate3d(calc(var(--avatar-look-x) * 3px - 1px), calc(var(--avatar-look-y) * 2px), 0)
+      scale(1.006);
+  }
+
+  50% {
+    transform:
+      translate3d(calc(var(--avatar-look-x) * 3px + 1px), calc(var(--avatar-look-y) * 2px - 2px), 0)
+      scale(1.025);
+  }
+}
+
+@keyframes avatarStageBlink {
+  0%,
+  91%,
+  100% {
+    transform: scaleY(1);
+  }
+
+  94%,
+  96% {
+    transform: scaleY(0.14);
+  }
+}
+
+@keyframes avatarStageQuickBlink {
+  0%,
+  48%,
+  100% {
+    transform: scaleY(1);
+  }
+
+  56%,
+  64% {
+    transform: scaleY(0.12);
+  }
+}
+
+@keyframes avatarStageThinking {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--warning) 30%, transparent);
+  }
+
+  55% {
+    box-shadow: 0 0 0 8px color-mix(in srgb, var(--warning) 0%, transparent);
+  }
+}
+
+@keyframes avatarStagePulse {
+  0% {
+    opacity: 0.68;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .figure,
+  .eyes i,
+  .statusDot,
+  .pulse {
+    animation: none;
+  }
+}

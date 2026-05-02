@@ -3,8 +3,13 @@ node_modules/
 .next/
 dist/
 build/
+backend/bin/
+backend/api
 .env
 .env.local
 tmp/
 *.log
+*.tsbuildinfo
 coverage/
+.cron/
+.ops/

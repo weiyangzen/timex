@@ -1,0 +1,32 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "AYuan.moc3",
+		"Textures": [
+			"AYuan.1024/texture_00.png"
+		],
+		"DisplayInfo": "AYuan.cdi3.json",
+		"Motions": {
+			"idle": [
+				{
+					"File": "motions/idle.motion3.json"
+				}
+			],
+			"blink": [
+				{
+					"File": "motions/blink.motion3.json"
+				}
+			],
+			"thinking": [
+				{
+					"File": "motions/thinking.motion3.json"
+				}
+			],
+			"greeting": [
+				{
+					"File": "motions/greeting.motion3.json"
+				}
+			]
+		}
+	}
+}

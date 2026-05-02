@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "character": "AYuan",
+  "sourceTensor": "AYuan_tensor/tensor-manifest.json",
+  "frameCount": 16,
+  "grid": {
+    "columns": 4,
+    "rows": 4
+  },
+  "tensorCellSize": 256,
+  "previewCellSize": 512,
+  "coordinateSpace": "source-pixels",
+  "encoding": {
+    "motionTensorPng": {
+      "red": "dx encoded as 128 + dx / 96 * 127",
+      "green": "dy encoded as 128 + dy / 96 * 127",
+      "blue": "role pin strength / seam lock, 0-255",
+      "alpha": "source part alpha mask"
+    }
+  },
+  "motions": {
+    "blink": {
+      "manifest": "AYuan_motion_tensors/blink.motion-tensor.json",
+      "tensor": "AYuan_motion_tensors/blink.motion-tensor.png",
+      "pin": "AYuan_motion_tensors/blink.pin-tensor.png",
+      "preview": "AYuan_motion_tensors/blink.preview-16grid.png"
+    },
+    "thinking": {
+      "manifest": "AYuan_motion_tensors/thinking.motion-tensor.json",
+      "tensor": "AYuan_motion_tensors/thinking.motion-tensor.png",
+      "pin": "AYuan_motion_tensors/thinking.pin-tensor.png",
+      "preview": "AYuan_motion_tensors/thinking.preview-16grid.png"
+    },
+    "greeting": {
+      "manifest": "AYuan_motion_tensors/greeting.motion-tensor.json",
+      "tensor": "AYuan_motion_tensors/greeting.motion-tensor.png",
+      "pin": "AYuan_motion_tensors/greeting.pin-tensor.png",
+      "preview": "AYuan_motion_tensors/greeting.preview-16grid.png"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "quant_mode": "nf4",
+  "peak_vram_gb": 3.630641460418701,
+  "layerdiff_time_s": 1.6433064937591553,
+  "marigold_time_s": 0.7126219272613525,
+  "psd_time_s": 0.14544892311096191,
+  "total_time_s": 11.776409149169922
+}

@@ -8,7 +8,7 @@ The Stage 0 demo turns a person's skills, private knowledge base, AI avatar, and
 
 ```text
 Docs/       Stage 0 product, trading, data, and demo blueprint
-frontend/   Next.js frontend, served on port 5000
+frontend/   Next.js frontend, served on port 5012
 backend/    Go API backend, default port 5001
 ```
 
@@ -34,11 +34,17 @@ npm install
 npm run dev
 ```
 
+The frontend is a minimal ChatGPT-style TimeX console. Agent behavior is
+platform-managed or mocked behind TimeX; users provide seller knowledge, not
+external agent accounts or runtime keys.
+
 Backend:
 
 ```bash
 cd backend
-go run ./cmd/api
+go build -o ./bin/timex ./cmd/timex
+./bin/timex migrate run
+./bin/timex server
 ```
 
 Optional local dependencies:
@@ -48,3 +54,20 @@ docker compose up -d
 ```
 
 The compose file maps PostgreSQL to `55432` and Redis to `56379` to avoid common local port collisions.
+
+`timex migrate run` uses `TIMEX_DATABASE_URL`, then `DATABASE_URL`, then the
+local compose default `postgres://timex:timex@localhost:55432/timex?sslmode=disable`.
+It creates `schema_migrations`, migrates persisted user profile/auth fields, and
+initializes the default local accounts:
+
+- `Weiyang` / `Yipansansha`
+- `AYuan` / `YuanAYuan`
+
+Runtime keys stay in environment variables or `.env`; they are not stored by
+database migrations.
+
+## License
+
+This project is licensed under the PolyForm Noncommercial License 1.0.0. It is
+source-available for noncommercial use and is not licensed for direct commercial
+use.

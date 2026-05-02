@@ -1,0 +1,53 @@
+{
+  "source": "https://giphy.com/gifs/animated-the-beatles-QpWDP1YMziaQw",
+  "usage": "Motion reference only. Do not copy the GIF asset into the project.",
+  "frame": {
+    "width": 500,
+    "height": 500,
+    "cropY": 125,
+    "cropHeight": 360
+  },
+  "profiles": {
+    "p1_blue_light": {
+      "crop": { "x": 25, "width": 130 },
+      "description": "Light small-step walk with low body bounce.",
+      "stride": 0.78,
+      "stepLift": 0.52,
+      "bodySway": 0.42,
+      "bodyBounce": 0.28,
+      "shoulderCounter": 0.55,
+      "footLead": 0.18
+    },
+    "p2_grey_natural": {
+      "crop": { "x": 115, "width": 140 },
+      "description": "Most usable natural full-body walk cycle for AYuan idle.",
+      "stride": 0.92,
+      "stepLift": 0.68,
+      "bodySway": 0.58,
+      "bodyBounce": 0.36,
+      "shoulderCounter": 0.7,
+      "footLead": 0.24
+    },
+    "p3_black_heavy": {
+      "crop": { "x": 230, "width": 125 },
+      "description": "Heavier step with lower lift and slower-looking weight transfer.",
+      "stride": 0.74,
+      "stepLift": 0.38,
+      "bodySway": 0.64,
+      "bodyBounce": 0.22,
+      "shoulderCounter": 0.82,
+      "footLead": 0.12
+    },
+    "p4_white_high_knee": {
+      "crop": { "x": 335, "width": 145 },
+      "description": "Exaggerated high-knee walk; useful for greeting, not default idle.",
+      "stride": 1.1,
+      "stepLift": 1.0,
+      "bodySway": 0.72,
+      "bodyBounce": 0.62,
+      "shoulderCounter": 0.5,
+      "footLead": 0.36
+    }
+  },
+  "selectedForAyuan": "p2_grey_natural"
+}

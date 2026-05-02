@@ -1,0 +1,44 @@
+{
+  "source": "assets/live2d/generated/see-through-nf4-r1024/AYuan/AYuan",
+  "output": "assets/live2d/generated/see-through-nf4-r1024/AYuan/AYuan_split_layers",
+  "note": "Non-destructive helper layers for Cubism reimport. Original PSD/MOC are not modified.",
+  "splitX": 500,
+  "feather": 18,
+  "layers": {
+    "legwear": {
+      "source": "AYuan/legwear.png",
+      "left": "AYuan_split_layers/legwear_left.png",
+      "right": "AYuan_split_layers/legwear_right.png",
+      "leftLower": "AYuan_split_layers/legwear_left_lower.png",
+      "rightLower": "AYuan_split_layers/legwear_right_lower.png",
+      "hipAnchor": "AYuan_split_layers/legwear_hip_anchor.png",
+      "bbox": [
+        378,
+        466,
+        599,
+        940
+      ],
+      "leftPixels": 30618,
+      "rightPixels": 24764,
+      "leftLowerPixels": 15686,
+      "rightLowerPixels": 16288,
+      "hipAnchorPixels": 32647
+    },
+    "footwear": {
+      "source": "AYuan/footwear.png",
+      "left": "AYuan_split_layers/footwear_left.png",
+      "right": "AYuan_split_layers/footwear_right.png",
+      "bbox": [
+        350,
+        764,
+        604,
+        1007
+      ],
+      "leftPixels": 18375,
+      "rightPixels": 16514,
+      "leftLowerPixels": 18375,
+      "rightLowerPixels": 16514,
+      "hipAnchorPixels": 0
+    }
+  }
+}
