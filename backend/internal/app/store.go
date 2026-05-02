@@ -1409,37 +1409,51 @@ func (s *Store) ForceDefault(userID string) map[string]any {
 
 func (s *Store) seedLocked(userID string) *DemoHistoryBatch {
 	now := s.now().UTC().Truncate(time.Minute)
-	if len(s.users) == 0 {
-		seller := &User{
-			ID:           "usr_demo_seller",
-			LoginName:    "ayuan",
-			PasswordHash: mustHashPassword("YuanAYuan"),
-			DisplayName:  "AYuan",
-			TickerSymbol: "AYUAN",
-			AvatarURL:    "/avatar/AYuan.png",
-			PortraitURL:  "/avatar/AYuan.png",
-			BalanceCents: 1000000,
-			CreatedAt:    now.Add(-10 * 24 * time.Hour),
-		}
-		weiyang := &User{
-			ID:           "usr_demo_weiyang",
-			LoginName:    "weiyang",
-			PasswordHash: mustHashPassword("Yipansansha"),
-			DisplayName:  "Weiyang",
-			TickerSymbol: "WEIYANG",
-			AvatarURL:    "/avatar/Weiyang.png",
-			PortraitURL:  "/avatar/Weiyang.png",
-			BalanceCents: 1000000,
-			CreatedAt:    now.Add(-10 * 24 * time.Hour),
-		}
-		buyer := &User{ID: "usr_demo_buyer", LoginName: "buyer", PasswordHash: mustHashPassword("password"), DisplayName: "Demo Buyer", InitialInfo: "Demo Buyer wants concise, practical help and prefers clear next actions before committing time or credits.", BalanceCents: 1000000, CreatedAt: now.Add(-9 * 24 * time.Hour)}
-		s.users[seller.ID] = seller
-		s.users[weiyang.ID] = weiyang
-		s.users[buyer.ID] = buyer
-		s.usersByLoginName[seller.LoginName] = seller.ID
-		s.usersByLoginName[weiyang.LoginName] = weiyang.ID
-		s.usersByLoginName[buyer.LoginName] = buyer.ID
-	}
+	s.ensureSeedUserLocked(&User{
+		ID:                  "usr_demo_seller",
+		LoginName:           "ayuan",
+		PasswordHash:        mustHashPassword("YuanAYuan"),
+		DisplayName:         "AYuan",
+		TickerSymbol:        "AYUAN",
+		AvatarURL:           "/avatar/AYuan.png",
+		InitialInfo:         "AYuan focuses on market operation, timing windows, and structured founder calls.",
+		Headline:            "Market operation and timing-window strategist",
+		MBTI:                "ENFJ",
+		Bio:                 "Market operation, timing windows, and structured founder call sessions.",
+		PortraitURL:         "/avatar/AYuan.png",
+		ChatAvatarURL:       "/avatar/AYuan.png",
+		TradeLogoURL:        "/avatar/AYuan.png",
+		AgentBasePriceCents: 15000,
+		BalanceCents:        1000000,
+		CreatedAt:           now.Add(-10 * 24 * time.Hour),
+	})
+	s.ensureSeedUserLocked(&User{
+		ID:                  "usr_demo_weiyang",
+		LoginName:           "weiyang",
+		PasswordHash:        mustHashPassword("Yipansansha"),
+		DisplayName:         "Weiyang",
+		TickerSymbol:        "WEIYANG",
+		AvatarURL:           "/avatar/Weiyang.png",
+		InitialInfo:         "Weiyang focuses on AI product diagnosis, market structure, and practical execution.",
+		Headline:            "AI product diagnosis and execution operator",
+		MBTI:                "INTJ",
+		Bio:                 "AI product diagnosis, market structure, and practical execution sessions.",
+		PortraitURL:         "/avatar/Weiyang.png",
+		ChatAvatarURL:       "/avatar/Weiyang.png",
+		TradeLogoURL:        "/avatar/Weiyang.png",
+		AgentBasePriceCents: 12000,
+		BalanceCents:        1000000,
+		CreatedAt:           now.Add(-10 * 24 * time.Hour),
+	})
+	s.ensureSeedUserLocked(&User{
+		ID:           "usr_demo_buyer",
+		LoginName:    "buyer",
+		PasswordHash: mustHashPassword("password"),
+		DisplayName:  "Demo Buyer",
+		InitialInfo:  "Demo Buyer wants concise, practical help and prefers clear next actions before committing time or credits.",
+		BalanceCents: 1000000,
+		CreatedAt:    now.Add(-9 * 24 * time.Hour),
+	})
 	if len(s.tickers) == 0 {
 		ticker := &Ticker{ID: "tic_user_usr_demo_seller", OwnerUserID: "usr_demo_seller", Symbol: "AYUAN", DisplayName: "AYuan", AvatarURL: "/avatar/AYuan.png", VerifiedBadge: true, CreatedAt: now.Add(-8 * 24 * time.Hour)}
 		weiyangTicker := &Ticker{ID: "tic_user_usr_demo_weiyang", OwnerUserID: "usr_demo_weiyang", Symbol: "WEIYANG", DisplayName: "Weiyang", AvatarURL: "/avatar/Weiyang.png", VerifiedBadge: true, CreatedAt: now.Add(-8 * 24 * time.Hour)}
@@ -1500,6 +1514,78 @@ func (s *Store) seedLocked(userID string) *DemoHistoryBatch {
 	batch := &DemoHistoryBatch{ID: newID("batch"), Scope: "all", CreatedByUserID: userID, CreatedTicketCount: len(s.tickets), CreatedTradeCount: len(s.trades), CreatedSessionCount: len(s.chatSessions), CreatedAt: now}
 	s.demoBatches[batch.ID] = batch
 	return cloneBatch(batch)
+}
+
+func (s *Store) ensureSeedUserLocked(defaultUser *User) {
+	if defaultUser == nil || strings.TrimSpace(defaultUser.ID) == "" || strings.TrimSpace(defaultUser.LoginName) == "" {
+		return
+	}
+	loginName := strings.ToLower(strings.TrimSpace(defaultUser.LoginName))
+	defaultUser.LoginName = loginName
+	user := s.users[defaultUser.ID]
+	if user == nil {
+		if existingID := s.usersByLoginName[loginName]; existingID != "" {
+			user = s.users[existingID]
+			delete(s.users, existingID)
+		}
+	}
+	if user == nil {
+		s.users[defaultUser.ID] = defaultUser
+		s.usersByLoginName[loginName] = defaultUser.ID
+		return
+	}
+	user.ID = defaultUser.ID
+	fillSeedUserDefaults(user, defaultUser)
+	s.users[defaultUser.ID] = user
+	s.usersByLoginName[loginName] = defaultUser.ID
+}
+
+func fillSeedUserDefaults(user, defaultUser *User) {
+	if user.LoginName == "" {
+		user.LoginName = defaultUser.LoginName
+	}
+	if user.PasswordHash == "" {
+		user.PasswordHash = defaultUser.PasswordHash
+	}
+	if user.DisplayName == "" {
+		user.DisplayName = defaultUser.DisplayName
+	}
+	if user.TickerSymbol == "" {
+		user.TickerSymbol = defaultUser.TickerSymbol
+	}
+	if user.AvatarURL == "" {
+		user.AvatarURL = defaultUser.AvatarURL
+	}
+	if user.InitialInfo == "" {
+		user.InitialInfo = defaultUser.InitialInfo
+	}
+	if user.Headline == "" {
+		user.Headline = defaultUser.Headline
+	}
+	if user.MBTI == "" {
+		user.MBTI = defaultUser.MBTI
+	}
+	if user.Bio == "" {
+		user.Bio = defaultUser.Bio
+	}
+	if user.PortraitURL == "" {
+		user.PortraitURL = defaultUser.PortraitURL
+	}
+	if user.ChatAvatarURL == "" {
+		user.ChatAvatarURL = defaultUser.ChatAvatarURL
+	}
+	if user.TradeLogoURL == "" {
+		user.TradeLogoURL = defaultUser.TradeLogoURL
+	}
+	if user.AgentBasePriceCents == 0 {
+		user.AgentBasePriceCents = defaultUser.AgentBasePriceCents
+	}
+	if user.BalanceCents == 0 {
+		user.BalanceCents = defaultUser.BalanceCents
+	}
+	if user.CreatedAt.IsZero() {
+		user.CreatedAt = defaultUser.CreatedAt
+	}
 }
 
 func (s *Store) ensureDefaultWeiyangAyuanSessionLocked(now time.Time) {

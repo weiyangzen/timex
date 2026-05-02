@@ -113,34 +113,52 @@ func RunMigrations(ctx context.Context, databaseURL string, logger *log.Logger) 
 
 func ensureDefaultUsers(ctx context.Context, db *sql.DB) error {
 	defaults := []struct {
-		ID           string
-		LoginName    string
-		Password     string
-		DisplayName  string
-		TickerSymbol string
-		AvatarURL    string
-		InitialInfo  string
-		Bio          string
+		ID                  string
+		LoginName           string
+		Password            string
+		DisplayName         string
+		TickerSymbol        string
+		AvatarURL           string
+		InitialInfo         string
+		Headline            string
+		MBTI                string
+		Bio                 string
+		PortraitURL         string
+		ChatAvatarURL       string
+		TradeLogoURL        string
+		AgentBasePriceCents int64
 	}{
 		{
-			ID:           "usr_default_weiyang",
-			LoginName:    "weiyang",
-			Password:     "Yipansansha",
-			DisplayName:  "Weiyang",
-			TickerSymbol: "WEIYANG",
-			AvatarURL:    "/avatar/Weiyang.png",
-			InitialInfo:  "Weiyang focuses on AI product diagnosis, market structure, and practical execution.",
-			Bio:          "AI product diagnosis and execution sessions.",
+			ID:                  "usr_demo_weiyang",
+			LoginName:           "weiyang",
+			Password:            "Yipansansha",
+			DisplayName:         "Weiyang",
+			TickerSymbol:        "WEIYANG",
+			AvatarURL:           "/avatar/Weiyang.png",
+			InitialInfo:         "Weiyang focuses on AI product diagnosis, market structure, and practical execution.",
+			Headline:            "AI product diagnosis and execution operator",
+			MBTI:                "INTJ",
+			Bio:                 "AI product diagnosis, market structure, and practical execution sessions.",
+			PortraitURL:         "/avatar/Weiyang.png",
+			ChatAvatarURL:       "/avatar/Weiyang.png",
+			TradeLogoURL:        "/avatar/Weiyang.png",
+			AgentBasePriceCents: 12000,
 		},
 		{
-			ID:           "usr_default_ayuan",
-			LoginName:    "ayuan",
-			Password:     "YuanAYuan",
-			DisplayName:  "AYuan",
-			TickerSymbol: "AYUAN",
-			AvatarURL:    "/avatar/AYuan.png",
-			InitialInfo:  "AYuan focuses on market operation, timing windows, and structured founder calls.",
-			Bio:          "Market operation and timing sessions.",
+			ID:                  "usr_demo_seller",
+			LoginName:           "ayuan",
+			Password:            "YuanAYuan",
+			DisplayName:         "AYuan",
+			TickerSymbol:        "AYUAN",
+			AvatarURL:           "/avatar/AYuan.png",
+			InitialInfo:         "AYuan focuses on market operation, timing windows, and structured founder calls.",
+			Headline:            "Market operation and timing-window strategist",
+			MBTI:                "ENFJ",
+			Bio:                 "Market operation, timing windows, and structured founder call sessions.",
+			PortraitURL:         "/avatar/AYuan.png",
+			ChatAvatarURL:       "/avatar/AYuan.png",
+			TradeLogoURL:        "/avatar/AYuan.png",
+			AgentBasePriceCents: 15000,
 		},
 	}
 
@@ -151,18 +169,33 @@ func ensureDefaultUsers(ctx context.Context, db *sql.DB) error {
 		}
 		if _, err := db.ExecContext(ctx, `
 INSERT INTO users (
-  id, login_name, password_hash, display_name, ticker_symbol, avatar_url, initial_info, bio, balance_cents, created_at
+  id, login_name, password_hash, display_name, ticker_symbol, avatar_url, initial_info,
+  headline, mbti, bio, portrait_url, chat_avatar_url, trade_logo_url, agent_base_price_cents,
+  balance_cents, created_at
 ) VALUES (
-  $1, $2, $3, $4, $5, $6, $7, $8, 1000000, now()
+  $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, 1000000, now()
 )
 ON CONFLICT (login_name) DO UPDATE SET
+  id = CASE
+    WHEN users.id IN ('usr_default_weiyang', 'usr_default_ayuan') THEN EXCLUDED.id
+    ELSE users.id
+  END,
   password_hash = EXCLUDED.password_hash,
-  display_name = EXCLUDED.display_name,
-  ticker_symbol = EXCLUDED.ticker_symbol,
-  avatar_url = EXCLUDED.avatar_url,
-  initial_info = EXCLUDED.initial_info,
-  bio = EXCLUDED.bio
-`, user.ID, user.LoginName, hash, user.DisplayName, user.TickerSymbol, user.AvatarURL, user.InitialInfo, user.Bio); err != nil {
+  display_name = COALESCE(NULLIF(users.display_name, ''), EXCLUDED.display_name),
+  ticker_symbol = COALESCE(NULLIF(users.ticker_symbol, ''), EXCLUDED.ticker_symbol),
+  avatar_url = COALESCE(NULLIF(users.avatar_url, ''), EXCLUDED.avatar_url),
+  initial_info = COALESCE(NULLIF(users.initial_info, ''), EXCLUDED.initial_info),
+  headline = COALESCE(NULLIF(users.headline, ''), EXCLUDED.headline),
+  mbti = COALESCE(NULLIF(users.mbti, ''), EXCLUDED.mbti),
+  bio = COALESCE(NULLIF(users.bio, ''), EXCLUDED.bio),
+  portrait_url = COALESCE(NULLIF(users.portrait_url, ''), EXCLUDED.portrait_url),
+  chat_avatar_url = COALESCE(NULLIF(users.chat_avatar_url, ''), EXCLUDED.chat_avatar_url),
+  trade_logo_url = COALESCE(NULLIF(users.trade_logo_url, ''), EXCLUDED.trade_logo_url),
+  agent_base_price_cents = CASE
+    WHEN users.agent_base_price_cents = 0 THEN EXCLUDED.agent_base_price_cents
+    ELSE users.agent_base_price_cents
+  END
+`, user.ID, user.LoginName, hash, user.DisplayName, user.TickerSymbol, user.AvatarURL, user.InitialInfo, user.Headline, user.MBTI, user.Bio, user.PortraitURL, user.ChatAvatarURL, user.TradeLogoURL, user.AgentBasePriceCents); err != nil {
 			return err
 		}
 	}
